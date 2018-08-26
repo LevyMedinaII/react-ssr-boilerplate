@@ -2,10 +2,9 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 // import our main App component
-import App from '../../components/App';
-
-const path = require('path');
-const fs = require('fs');
+import App from '../../App';
+import path from 'path';
+import fs from 'fs';
 
 export default (req, res, next) => {
 

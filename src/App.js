@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Sandbox from './pages/Sandbox/Sandbox';
 
 class App extends Component {
   render() {
     return (
-      <div>Hello World</div>
+      <div><Sandbox/></div>
     );
   }
 }

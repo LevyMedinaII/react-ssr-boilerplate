@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => (
   <div className="navbar-default is-navbar-container">
     <div className="is-brand">
-      <h2><b className="is-logo">ASMRS</b></h2>
+      <b className="is-logo">ASMRS</b>
       <a href="#"
         className="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
         data-kube="toggle"

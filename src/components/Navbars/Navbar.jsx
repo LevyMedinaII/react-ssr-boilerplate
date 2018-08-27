@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => (
   <div className="navbar-default is-navbar-container">
     <div className="is-brand">
-      <b className="is-logo">ASMRS</b>
+      <b className="is-logo">MANREG SYSTEM</b>
       <a href="#"
         className="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
         data-kube="toggle"
@@ -16,13 +16,13 @@ const Navbar = () => (
       <nav>
         <ul>
           <li className="is-container">
-            <a className="navbar-link is-push-right-mobile" href="#">Active</a>
+            <a className="navbar-link is-push-right-mobile" href="/">Home</a>
           </li>
           <li className="is-container">
-            <a className="navbar-link is-push-right-mobile" href="/404">404!</a>
+            <a className="navbar-link is-push-right-mobile" href="/add-problem">Add a Problem</a>
           </li>
           <li className="is-container">
-            <a className="navbar-link is-push-right-mobile" href="/details">ManReg Details</a>
+            <a className="navbar-link is-push-right-mobile" href="/settings">Settings</a>
           </li>
           <li className="is-container">
             <a className="navbar-link is-push-right-mobile" href="http://regcom.ateneo.edu">

@@ -1,5 +1,7 @@
-import SubmitButton from './SubmitButton.jsx';
+import { FormLoginButton } from './LoginButton.jsx';
+import { NavbarLogoutButton } from './LogoutButton.jsx';
 
 export {
-  SubmitButton,
+  FormLoginButton,
+  NavbarLogoutButton,
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SubmitButton } from '../Buttons';
+import { FormLoginButton as Button } from '../Buttons';
 
 class LoginForm extends Component {
   render() {
@@ -15,7 +15,7 @@ class LoginForm extends Component {
         </div>
         <br />
         <div className="is-container">
-          <SubmitButton> Log In </SubmitButton>
+          <Button> Log In </Button>
           <button
             className="button is-push-right is-tertiary"
             onClick={(e) => e.preventDefault()}

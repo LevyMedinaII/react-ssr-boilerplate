@@ -1,27 +1,15 @@
 import React, { Component } from 'react';
-import Loadable from 'react-loadable';
-import { FullscreenLoader } from '../../components/Loaders';
+import { Navbar } from '../../components/Navbars';
 import './Sandbox.css';
-
-const AsyncLoginForm = Loadable({
-  loader: () => import(/* webpackChunkName: "LoginPage" */ '../../components/Forms/LoginForm.jsx'),
-  loading: () => <FullscreenLoader />,
-  modules: ['LoginPage']
-});
 
 class Sandbox extends Component {
   render() {
     return (
-      <div className="login-page">
+      <div>
         <noscript>
           This is a sandbox page.
         </noscript>
-        <div className="is-25 is-center">
-          <h1> Ateneo Student Manual Registration System </h1>
-          <br />
-          <br />
-          <AsyncLoginForm />
-        </div>
+        <Navbar />
       </div>
     );
   }

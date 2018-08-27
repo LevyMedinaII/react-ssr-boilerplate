@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SubmitButton extends Component {
+class FormLoginButton extends Component {
   constructor(props) {
     super(props);
 
@@ -17,4 +17,6 @@ class SubmitButton extends Component {
   }
 }
 
-export default SubmitButton;
+export {
+  FormLoginButton
+};

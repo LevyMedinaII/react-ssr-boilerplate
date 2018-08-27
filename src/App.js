@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { Dashboard, FourOhFourPage, LoginPage, Sandbox } from './pages';
 import { FullscreenLoader } from './components/Loaders';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
+
+const Home = () => (
+  <div>
+    <Link to="/dashboard">Dashboard</Link>
+    <Link to="/login">LoginPage</Link>
+    <Link to="/sandbox">Sandbox</Link>
+    <Link to="/loading">FullscreenLoader</Link>
+  </div>
+);
 
 class App extends Component {
   render() {
@@ -11,6 +20,7 @@ class App extends Component {
         <Route path="/login" component={LoginPage} />
         <Route path="/sandbox" component={Sandbox} />
         <Route path="/loading" component={FullscreenLoader} />
+        <Route exact path="/" component={Home} />
         <Route component={FourOhFourPage} />
       </Switch>
     );

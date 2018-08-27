@@ -13,6 +13,9 @@ class Sandbox extends Component {
   render() {
     return (
       <div className="login-page">
+        <noscript>
+          This is a sandbox page.
+        </noscript>
         <div className="is-25 is-center">
           <h1> Ateneo Student Manual Registration System </h1>
           <br />

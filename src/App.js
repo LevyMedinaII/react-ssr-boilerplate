@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Sandbox } from './pages';
+import { Sandbox, LoginPage, FourOhFourPage } from './pages';
 import { Switch, Route } from 'react-router-dom';
 
-const FourOhFour = () => <h1> 404 </h1>;
 class App extends Component {
   render() {
     return (
       <Switch>
+        <Route path="/login" component={LoginPage} />
         <Route exact path="/" component={Sandbox} />
-        <Route component={FourOhFour} />
+        <Route component={FourOhFourPage} />
       </Switch>
     );
   }

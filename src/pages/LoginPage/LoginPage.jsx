@@ -4,9 +4,9 @@ import { FullscreenLoader } from '../../components/Loaders';
 import './LoginPage.css';
 
 const AsyncLoginForm = Loadable({
-  loader: () => import(/* webpackChunkName: "LoginPage" */ '../../components/Forms/LoginForm.jsx'),
+  loader: () => import(/* webpackChunkName: "LoginForm" */ '../../components/Forms/LoginForm.jsx'),
   loading: () => <FullscreenLoader />,
-  modules: ['LoginPage']
+  modules: ['LoginForm']
 });
 
 class LoginPage extends Component {

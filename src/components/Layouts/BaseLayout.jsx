@@ -6,7 +6,7 @@ const BaseLayout = (props) => (
   <div>
     <Navbar />
     <div className="layout-base-content">
-      { props.children }
+      <div> { props.children } </div>
     </div>
   </div>
 );

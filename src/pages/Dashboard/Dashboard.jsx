@@ -6,6 +6,8 @@ class Dashboard extends Component {
     return (
       <BaseLayout>
         <h1> ID Number: 132694 </h1>
+        <h1> Name: Medina, Levy II </h1>
+        <h1> Manual Registration Details: </h1>
       </BaseLayout>
     );
   }

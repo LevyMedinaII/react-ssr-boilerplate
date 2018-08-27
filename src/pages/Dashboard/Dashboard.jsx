@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { BaseLayout } from '../../components/Layouts';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        Dashboard
-      </div>
+      <BaseLayout>
+        <h1> ID Number: 132694 </h1>
+      </BaseLayout>
     );
   }
 }

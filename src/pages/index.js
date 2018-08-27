@@ -1,9 +1,30 @@
-import Sandbox from './Sandbox/Sandbox.jsx';
+import React from 'react';
+import Loadable from 'react-loadable';
+import { FullscreenLoader } from '../components/Loaders';
+
 import FourOhFourPage from './FourOhFourPage/FourOhFourPage.jsx';
-import LoginPage from './LoginPage/LoginPage.jsx';
+
+const Dashboard = Loadable({
+  loader: () => import(/* webpackChunkName: "Dashboard" */ './Dashboard/Dashboard.jsx'),
+  loading: () => <FullscreenLoader />,
+  modules: ['Dashboard']
+});
+
+const LoginPage = Loadable({
+  loader: () => import(/* webpackChunkName: "LoginPage" */ './LoginPage/LoginPage.jsx'),
+  loading: () => <FullscreenLoader />,
+  modules: ['LoginPage']
+});
+
+const Sandbox = Loadable({
+  loader: () => import(/* webpackChunkName: "Sandbox" */ './Sandbox/Sandbox.jsx'),
+  loading: () => <FullscreenLoader />,
+  modules: ['Sandbox']
+});
 
 export {
-  Sandbox,
-  LoginPage,
+  Dashboard,
   FourOhFourPage,
+  LoginPage,
+  Sandbox,
 }

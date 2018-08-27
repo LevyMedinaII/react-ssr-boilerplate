@@ -1,5 +1,6 @@
-.navbar-padded {
+.navbar-default{
   padding: 25px;
+  border-bottom: 2px solid #111113;
 }
 
 .navbar-link {

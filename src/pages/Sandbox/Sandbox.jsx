@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar } from '../../components/Navbars';
+import { BaseLayout } from '../../components/Layouts';
 import './Sandbox.css';
 
 class Sandbox extends Component {
@@ -9,7 +9,9 @@ class Sandbox extends Component {
         <noscript>
           This is a sandbox page.
         </noscript>
-        <Navbar />
+        <BaseLayout>
+          Bro
+        </BaseLayout>
       </div>
     );
   }

@@ -33,7 +33,7 @@ const getShittyQuote = () => (
 
 const FourOhFourPage = () => (
   <div className="four-oh-four-page">
-    <div className="is-33 is-center">
+    <div className="is-40">
       <h1> 404: Page not found </h1>
       <blockquote>
         { getShittyQuote() }

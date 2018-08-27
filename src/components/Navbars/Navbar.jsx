@@ -3,9 +3,9 @@ import { NavbarLogoutButton as Button } from '../Buttons/LogoutButton';
 import './Navbar.css';
 
 const Navbar = () => (
-  <div className="is-navbar-container navbar-padded">
+  <div className="navbar-default is-navbar-container">
     <div className="is-brand">
-      <b className="is-logo">Levy</b>
+      <b className="is-logo">ASMRS</b>
       <a href="#"
         className="nav-toggle is-push-right-mobile is-shown-mobile icon-kube-menu"
         data-kube="toggle"
@@ -13,14 +13,25 @@ const Navbar = () => (
       </a>
     </div>
     <div id="navbar-responsive" className="is-navbar is-hidden-mobile">
-      <nav className="is-stacked">
+      <nav>
         <ul>
-          <li className="is-active is-container">
+          <li className="is-container">
+            <a className="navbar-link is-push-right-mobile" href="#">Active</a>
+          </li>
+          <li className="is-container">
             <a className="navbar-link is-push-right-mobile" href="/404">404!</a>
+          </li>
+          <li className="is-container">
+            <a className="navbar-link is-push-right-mobile" href="/details">ManReg Details</a>
+          </li>
+          <li className="is-container">
+            <a className="navbar-link is-push-right-mobile" href="http://regcom.ateneo.edu">
+              Regcom's Website
+            </a>
           </li>
         </ul>
       </nav>
-      <nav className="is-stacked is-push-right">
+      <nav className="is-push-right">
         <ul>
           <li className="is-container"><Button>Sign Out</Button></li>
         </ul>

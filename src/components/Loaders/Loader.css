@@ -1,0 +1,15 @@
+@import '~loaders.css/loaders.min.css';
+
+.loader-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader-inner {
+  transform: scale(0.5, 0.5);
+}

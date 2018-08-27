@@ -16,7 +16,7 @@ class Logger {
     console.log(chalk.bgGreen(chalk.bold.white(SUCCESS_FLAG_TEXT)), message);
   }
   static text = message => {
-    console.log(chalk.bold.gray(LOG_FLAG_TEXT), message);
+    console.log(chalk.bgWhite(chalk.bold.gray(LOG_FLAG_TEXT)), message);
   }
 }
 

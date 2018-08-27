@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import Form from '../../components/Forms/LoginForm';
+import Loadable from 'react-loadable';
+import { FullscreenLoader } from '../../components/Loaders';
 import './LoginPage.css';
+
+const AsyncLoginForm = Loadable({
+  loader: () => import(/* webpackChunkName: "LoginPage" */ '../../components/Forms/LoginForm.jsx'),
+  loading: () => <FullscreenLoader />,
+  modules: ['LoginPage']
+});
 
 class LoginPage extends Component {
   render() {
@@ -10,7 +17,7 @@ class LoginPage extends Component {
           <h1> Ateneo Student Manual Registration System </h1>
           <br />
           <br />
-          <Form />
+          <AsyncLoginForm />
         </div>
       </div>
     );

@@ -1,10 +1,11 @@
 import express from 'express';
 import path from 'path';
+import Loadable from 'react-loadable';
 import serverRenderer from './middleware/renderer';
 import Logger from '../utils/Logger';
 
 const PORT = 3000;
-const STATIC_RESOURCE_LIFE = '30d';
+const STATIC_RESOURCE_LIFE = '1d';
 
 // Initialize app and create routes
 const app = express();
@@ -29,10 +30,12 @@ router.use('*', serverRenderer);
 // Use defined rules in app
 app.use(router);
 
-// Start application
-app.listen(PORT, error => {
-    if (error) {
-        return Logger.error(error);
-    }
-    Logger.success(`App running on port ${PORT}`);
+// Load all async components and start application
+Loadable.preloadAll().then(() => {
+    app.listen(PORT, error => {
+        if (error) {
+            return Logger.error(error);
+        }
+        Logger.success(`App running on port ${PORT}`);
+    });
 });

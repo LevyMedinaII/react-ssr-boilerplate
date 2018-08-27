@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Loadable from 'react-loadable';
-import LoginForm from '../../components/Forms/LoginForm';
+import { FullscreenLoader } from '../../components/Loaders';
 import './Sandbox.css';
 
 const AsyncLoginForm = Loadable({
-  loader: () => import('../../components/Forms/LoginForm'),
-  loading: () => <div>loading...</div>,
+  loader: () => import(/* webpackChunkName: "LoginPage" */ '../../components/Forms/LoginForm.jsx'),
+  loading: () => <FullscreenLoader />,
+  modules: ['LoginPage']
 });
 
 class Sandbox extends Component {

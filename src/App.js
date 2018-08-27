@@ -4,12 +4,12 @@ import { FullscreenLoader } from './components/Loaders';
 import { Switch, Route, Link } from 'react-router-dom';
 
 const Home = () => (
-  <div>
-    <Link to="/dashboard">Dashboard</Link>
-    <Link to="/login">LoginPage</Link>
-    <Link to="/sandbox">Sandbox</Link>
-    <Link to="/loading">FullscreenLoader</Link>
-  </div>
+  <ul>
+    <li><Link to="/dashboard">Dashboard</Link></li>
+    <li><Link to="/login">LoginPage</Link></li>
+    <li><Link to="/sandbox">Sandbox</Link></li>
+    <li><Link to="/loading">FullscreenLoader</Link></li>
+  </ul>
 );
 
 class App extends Component {
